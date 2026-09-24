@@ -123,3 +123,26 @@ section{padding-top:80px;padding-bottom:80px}
 @media (prefers-reduced-motion:reduce){.track{animation:none}}
 .prov.tall img{height:64px}
 .hero{padding-bottom:80px}
+
+/* Stat boxes light up on hover */
+.stat{transition:border-color .3s,box-shadow .3s,transform .3s,background .3s}
+.stat:hover{
+  border-color:rgba(190,150,255,.95);
+  background:linear-gradient(180deg,rgba(60,40,140,.95),rgba(24,18,70,.95));
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.15),0 0 0 1px rgba(170,120,255,.5),0 0 28px rgba(150,100,255,.6),0 0 70px rgba(90,70,255,.45);
+  transform:translateY(-4px);
+}
+.stat:hover strong{text-shadow:0 0 18px rgba(200,170,255,.8)}
+@media (prefers-reduced-motion:reduce){.stat:hover{transform:none}}
+
+/* Catalogue cards light up on hover */
+.card{transition:border-color .3s,box-shadow .3s,transform .3s,background .3s}
+.card:hover{
+  border-color:rgba(190,150,255,.95);
+  background:linear-gradient(180deg,rgba(40,28,100,.98),rgba(20,16,60,.98));
+  box-shadow:0 0 0 1px rgba(170,120,255,.5),0 0 28px rgba(150,100,255,.6),0 0 70px rgba(90,70,255,.45);
+  transform:translateY(-4px);
+}
+.card:hover .art img{opacity:1}
+.card:hover h3{text-shadow:0 0 18px rgba(200,170,255,.8),0 2px 12px rgba(0,0,0,.7)}
+@media (prefers-reduced-motion:reduce){.card:hover{transform:none}}
