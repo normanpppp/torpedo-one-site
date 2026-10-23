@@ -1,4 +1,4 @@
-# Torpedo One — mini site
+# Torpedo One mini site
 
 Static site (HTML + CSS, no build step) rebuilt from the "Tor-One _ Sales Deck" Figma.
 All images (hero background, catalogue artwork, Torpedo One logo, provider logos) were extracted from the Figma file into `assets/`.
